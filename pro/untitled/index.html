@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dropdown Navi/Carousel</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body onload="slider()">
+<nav id="nav">
+    <ul id="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Subjects  &UpArrowDownArrow;</a>
+            <ul>
+                <li><a href="#">Java Programming &raquo;</a>
+                    <ul>
+                        <li><a href="#">Standard Edition</a></li>
+                        <li><a href="#">Enterprise Edition</a></li>
+                        <li><a href="#">Java Frameworks</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Multimedia Programming &raquo;</a>
+                    <ul>
+                        <li><a href="#">Macromedia Flash</a></li>
+                        <li><a href="#">Adobe Flash</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Web Development &raquo;</a>
+                    <ul>
+                        <li><a href="#">PHP</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">Javascript</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Database &raquo;</a>
+                    <ul>
+                        <li><a href="#">MySQL</a></li>
+                        <li><a href="#">SQLite</a></li>
+                        <li><a href="#">MS Access</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Graphic Designing &raquo;</a>
+                    <ul>
+                        <li><a href="#">Photoshop</a></li>
+                        <li><a href="#">Fireworks</a></li>
+                        <li><a href="#">CorelDraw</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#" >Cluster</a></li>
+        <li><a href="#" >About</a></li>
+        <li><a href="#" >Contact</a></li>
+    </ul>
+</nav>
+
+<div class="jquery-carousel w3-content" style="max-width:800px;position:relative">
+
+        <img class="imgs mySlides" src="imagery/1.jpg" style="width:100%" onmouseover="paused()" onmouseout="play()">
+    <img class="imgs mySlides" src="imagery/2.jpg" style="width:100%" onmouseover="paused()" onmouseout="play()">
+    <img class="imgs mySlides" src="imagery/3.jpg" style="width:100%" onmouseover="paused()" onmouseout="play()">
+    <img class="imgs mySlides" src="imagery/4.jpg" style="width:100%" onmouseover="paused()" onmouseout="play()">
+    <img class="imgs mySlides" src="imagery/5.jpg" style="width:100%" onmouseover="paused()" onmouseout="play()">
+    <img class="imgs mySlides" src="imagery/6.jpg" style="width:100%" onmouseover="paused()" onmouseout="play()">
+    <img class="imgs mySlides" src="imagery/7.jpg" style="width:100%" onmouseover="paused()" onmouseout="play()">
+
+
+    <a class="floating-btn" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
+    <a class="floating-btn" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
+
+</div>
+
+<div class="indicators">
+
+    <span class=" btn-indicators" onclick="currentDiv(1)"></span>
+    <span class=" btn-indicators" onclick="currentDiv(2)"></span>
+    <span class=" btn-indicators" onclick="currentDiv(3)"></span>
+    <span class=" btn-indicators" onclick="currentDiv(4)"></span>
+    <span class=" btn-indicators" onclick="currentDiv(5)"></span>
+    <span class="btn-indicators" onclick="currentDiv(6)"></span>
+    <span class="btn-indicators" onclick="currentDiv(7)"></span>
+</div>
+
+<script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="carousel.js"></script>
+
+</body>
+</html>
